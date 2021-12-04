@@ -1,0 +1,8 @@
+sentence = 'Euler remarked on his loss of vision, stating "Now I will have fewer distractions."'
+
+def group_of_two(sentence):
+    sentence_split = sentence.split(sep = ' ')
+    bi_list = list(zip(*[sentence_split[i:] for i in range(2)]))
+    return print(bi_list)
+ 
+ group_of_two(sentence)
